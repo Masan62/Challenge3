@@ -1,76 +1,102 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000C26;
-    color: white;
-    text-align: center;
-    padding: 30px;
-  }
-  
-  h1 {
-    color: #4DA6FF;
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  .subtitle {
-    color: #AAB8C2;
-    margin-bottom: 30px;
-  }
-  
-  .table-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid #1B3B6F;
-    border-radius: 12px;
-    box-shadow: 0 0 12px #1B3B6F;
-    overflow: hidden;
-    background-color: #000C26;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #000C26;
-  }
-  
-  th, td {
-    padding: 15px 25px;
-    text-align: left;
-    border-bottom: 1px solid #1B3B6F;
-    background-color: #000C26;
-  }
-  
-  td:first-child, th:first-child {
-    padding-left: 60px;
-  }
-  
-  th {
-    color: #CCCCCC;
-    font-weight: 600;
-  }
-  
-  td img {
-    width: 38px;
-    vertical-align: middle;
-    margin-right: 12px;
-  }
-  
-  .signal-icon {
-    width: 50px;        
-    height: 50px;
-    vertical-align: middle;
-  }
-  
-  .status {
-    color: #00FF7F;
-    font-weight: bold;
-  }
-  
-  .experiment {
-    font-weight: bold;
-  }
-  
-  tr:last-child td {
-    border-bottom: none;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #000C26;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 60px; /* Space for the upper nav bar */
+}
+
+/* Upper nav menu */
+.upper-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.menu-icon img,
+.icons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Your original table styling below */
+h1 {
+  color: #4DA6FF;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #AAB8C2;
+  margin-bottom: 30px;
+}
+
+.table-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #1B3B6F;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #1B3B6F;
+  overflow: hidden;
+  background-color: #000C26;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000C26;
+}
+
+th, td {
+  padding: 15px 25px;
+  text-align: left;
+  border-bottom: 1px solid #1B3B6F;
+  background-color: #000C26;
+}
+
+td:first-child, th:first-child {
+  padding-left: 60px;
+}
+
+th {
+  color: #CCCCCC;
+  font-weight: 600;
+}
+
+td img {
+  width: 38px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.signal-icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.status {
+  color: #00FF7F;
+  font-weight: bold;
+}
+
+.experiment {
+  font-weight: bold;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
